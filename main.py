@@ -52,11 +52,10 @@ def register():
             text=True,
             cwd="/app/assets"
         )
-        print(result.stderr)
-        if "500 Internal Server Error" not in result.stderr:
-            flag = False  # دیگه تکرار نمی‌کنه
 
-    # حالا generate
+        if "500 Internal Server Error" not in result.stderr:
+            flag = False
+
     subprocess.run(
         ["./wgcf", "generate"],
         capture_output=True,
