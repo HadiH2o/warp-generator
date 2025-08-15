@@ -1,7 +1,5 @@
 FROM python:3.12-alpine
 
-RUN apk add libc6-compat
-
 WORKDIR /app
 
 COPY requirements.txt /app/requirements.txt
