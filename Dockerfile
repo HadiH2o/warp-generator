@@ -1,6 +1,6 @@
 FROM python:3.12-alpine
 
-RUN apk add --no-cache libc6-compat
+RUN apk add libc6-compat
 
 WORKDIR /app
 
